@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- My jQuery -->
+    <script src="app.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+
+    <title>Covid-19 status in INDIA</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./resources/img/logo.png" alt="" />
+            <h5>
+                <p>COVID-19<br/> STATUS IN INDIA</p>
+            </h5>
+        </div>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html" target="_blank">ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid bg-light p-5 text-center my-3">
+        <img src="./resources/img/hrx.jpg" alt="" width="500" height="250" />
+        <h1 class="">Covid-19 status in INDIA</h1>
+        <h5 class="text-muted">
+            YOU CAN CHECK HERE COVID-19 UPDATE IN INDIA
+
+        </h5>
+    </div>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-3 text-warning">
+                <h5>Total-Cases</h5>
+                <p id="confirmed"></p>
+            </div>
+            <div class="col-3 text-info">
+                <h5>Active</h5>
+                <p id="active"></p>
+            </div>
+            <div class="col-3 text-success">
+                <h5>Recovered</h5>
+                <p id="recovered"></p>
+            </div>
+            <div class="col-3 text-danger">
+                <h5>Deaths</h5>
+                <p id="deaths"></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container text-center my-5">
+        <h5>STATEWISE DATA CHART</h5>
+    </div>
+    <div class="container text-center my-5">
+        <h5><img src="./resources/img/arrow.png" alt="" /></h5>
+    </div>
+    <canvas id="myChart"></canvas>
+
+    <div class="container text-center my-5">
+        <h6 class="text-info">
+            *Click on the Confirmed/Recovered/Deaths buttons over the graph, <br> To see the status individually.*
+        </h6>
+    </div>
+
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+
+            <div class="footer-container">
+                <div class="copyright">
+                    <p>copyright© 2020 YITENDRA PUSHKAR</p>
+                    <p>Chandigarh Engineering College</p>
+                    <p> <a href="https://github.com/yitendra812"> Developer's github </a><br>
+                        <a href="https://www.linkedin.com/in/yitendra-pushkar-10838b17a/"> linkedin</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
